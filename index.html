@@ -7,25 +7,48 @@
     <title>TechWave</title>
 
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="inter-font">
     <header>
-        <nav class="navbar">
-            <h3 class="brand">TechWave</h3>
+        <nav class="navbar display-flex">
+            <h3 class="brand">Tech<span class="brand-color">Wave</span></h3>
 
-            <ul class="nav-links">
+            <ul class="nav-links display-flex">
                 <li class="nav-item"><a href="" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="" class="nav-link">Episodes</a></li>
-                <li class="nav-item"><a href="" class="nav-link"></a>Host</li>
+                <li class="nav-item"><a href="" class="nav-link">Host</a></li>
 
             </ul>
 
-            <div>
-                <button  class="primary-btn">Subscribe </button>
+            <div class="btn-container">
+                <button class="btn-primary">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="hamburger">
+                <img src="./assets/hamburger-menu.png" alt="">
             </div>
 
         </nav>
+
+        <section class="banner">
+            <div class="banner-img-container">
+                <img class="banner-img" src="./assets/hero-circle.png" alt="">
+                <img class="banner-microphone" src="./assets/microphone.png" alt="">
+            </div>
+            <h1 class="banner-title">TechWave</h1>
+
+            <p class="banner-description">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+
+            <div class="banner-btn">
+                <button class="btn-primary"><img src="./assets/spotify.png" alt=""> Listen on Spotify</button>
+                <button id="transparent-btn"><img src="./assets/message.png" alt=""> Subscribe</button>
+            </div>
+
+        </section>
     </header>
     <main>
 
