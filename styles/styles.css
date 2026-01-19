@@ -49,6 +49,7 @@ main>section {
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 40px;
 }
 
 /* Navbar styles */
@@ -157,7 +158,7 @@ main>section {
 
 .about-cards-container {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    margin-top: 150px;
+    /* margin-top: 150px; */
     justify-items: center;
 }
 
@@ -187,8 +188,6 @@ main>section {
 
 .option-card-1 {
     grid-row: span 2;
-    grid-auto-columns: auto;
-
 }
 
 .option-card-2 {
@@ -208,6 +207,7 @@ main>section {
     padding: 40px;
     border-radius: 40px;
     background-color: rgba(53, 17, 101, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .why-choose-container img,
@@ -220,6 +220,43 @@ p {
 .why-choose-container h3 {
     font-size: 1.5rem;
 }
+
+
+/* Featured Episodes section styles */
+.episodes-container {
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 370px;
+}
+
+.episode iframe {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.episode-content {
+    padding: 24px;
+    background-color: #250D44;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.time-container {
+
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 12px;
+    color: #00FF88;
+}
+
+
+
+
+
+
+
+
 
 
 /* responsive media query for mobile device */
@@ -242,7 +279,38 @@ p {
         background-image: url('../assets/hero-bg.png');
         background-size: 100% auto;
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         width: 100%;
         height: 120vh;
     }
+
+    .why-choose-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 20px;
+    }
+
+    .option-card-1 {
+        grid-row: auto;
+    }
+
+    .option-card-2 {
+        grid-column: auto;
+    }
+
+    .option-card-3 {
+        grid-column: auto;
+    }
+
+    .option-card-4 {
+        grid-column: auto;
+    }
+
+    .episodes-container {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
 }
