@@ -20,6 +20,7 @@
     display: grid;
 }
 
+
 body {
     color: white;
     background-color: #1A0B2E;
@@ -250,10 +251,42 @@ p {
     color: #00FF88;
 }
 
+/* Meet the host styles */
+.host-container {
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-bottom: 130px;
+}
 
+.social-icon {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
 
+.social-icon a {
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #533C72;
+    box-sizing: border-box;
+    flex-shrink: 0;
 
+    margin-right: 8px;
+}
 
+.social-icon img {
+    height: 20px;
+    display: block;
+}
+
+/* footer section styles */
 
 
 
@@ -307,10 +340,23 @@ p {
         grid-column: auto;
     }
 
-    .episodes-container {
+    .episodes-container,
+    .host-container {
         flex-direction: column;
         max-width: 90%;
         margin: 10px auto;
+        justify-content: center;
     }
+
+    .host-description {
+        text-align: center;
+        gap: 24px;
+    }
+
+    .social-icon {
+        max-width: 150px;
+        margin: 16px auto;
+    }
+
 
 }
