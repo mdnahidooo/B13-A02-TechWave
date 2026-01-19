@@ -161,6 +161,7 @@ main>section {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     /* margin-top: 150px; */
     justify-items: center;
+    margin-top: 130px;
 }
 
 .about-card {
@@ -287,9 +288,35 @@ p {
 }
 
 /* footer section styles */
+.footer-section {
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 120px;
+    width: 100%;
+}
+
+.footer-icon-container {
+    max-width: 650px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+
+    /* border: 2px solid red; */
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    margin: 20px;
+}
 
 
-
+.footer-section {
+    text-align: center;
+}
 
 
 /* responsive media query for mobile device */
@@ -357,6 +384,15 @@ p {
         max-width: 150px;
         margin: 16px auto;
     }
+
+    .footer-icon-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        gap: 10px;
+
+        /* border: 2px solid red; */
+    }
+
 
 
 }
