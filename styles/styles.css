@@ -53,6 +53,10 @@ main>section {
     margin-bottom: 40px;
 }
 
+p {
+    color: rgba(255, 255, 255, 0.722);
+}
+
 /* Navbar styles */
 .navbar {
     max-width: 1200px;
