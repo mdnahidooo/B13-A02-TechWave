@@ -313,17 +313,14 @@ p {
 }
 
 .footer-icon-container {
-    /* max-width: 650px;
-    margin: 0 auto; */
+    max-width: 650px;
+    margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 20px;
 
     /* border: 2px solid red; */
 }
 
-.footer-content {
-    border: 2px solid red;
-}
 
 .footer-icon {
     display: flex;
@@ -345,6 +342,10 @@ p {
     padding: 8px 16px;
     border-radius: 25px;
     transform: translateY(10px);
+}
+
+button:hover {
+    background-color: #00FF88;
 }
 
 /* responsive media query for mobile device */
@@ -438,5 +439,7 @@ p {
         position: relative;
     }
 
-
+    .brand {
+        margin: 0;
+    }
 }
