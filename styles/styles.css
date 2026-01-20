@@ -352,7 +352,7 @@ p {
     background-image: url(../assets/footer-bg.png);
     background-position: center;
     background-size: cover;
-    padding: 120px;
+    padding: 120px 0;
     width: 100%;
 }
 
@@ -451,6 +451,9 @@ p {
 
 /* responsive media query for mobile device */
 @media screen and (max-width:576px) {
+    .brand {
+        font-size: 2rem;
+    }
 
     .nav-links,
     .btn-container {
