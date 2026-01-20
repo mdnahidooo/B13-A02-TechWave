@@ -427,6 +427,7 @@ p {
 
 .card:hover {
     background-color: gray;
+    cursor: pointer;
 }
 
 /* for card animation */
