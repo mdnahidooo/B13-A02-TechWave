@@ -63,17 +63,23 @@ p {
     margin: 30px auto;
     justify-content: space-between;
     align-items: center;
+    /* border: 2px solid red; */
 }
 
 .brand {
     font-weight: 700;
     font-size: 3rem;
+    align-items: center;
+    margin: auto 5px;
 }
 
 .brand-color {
     background-image: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    position: relative;
 }
 
 .nav-item {
@@ -368,12 +374,12 @@ p {
 
 
 /* Extra styles css for hover and animations*/
-.navbar .nav-links li:hover {
+/* .navbar .nav-links li:hover {
     border: 2px solid #00FF88;
     padding: 8px 16px;
     border-radius: 25px;
     transform: translateY(10px);
-}
+} */
 
 /* new button for animation styles */
 .new-btn span {
@@ -418,8 +424,13 @@ p {
         margin-right: 20px;
     }
 
+    .banner-title {
+        font-size: 3rem;
+    }
+
     .banner-title,
-    .banner-description {
+    .banner-description,
+    .about-content p {
         margin: 25px;
         text-align: center;
     }
